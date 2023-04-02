@@ -1,0 +1,60 @@
+{
+	"expert": "yes",
+	"cli": false,
+	"adapterName": "ipverso2n",
+	"title": "2N IPVerso API Connect",
+	"description": "Connection to YouTube 2n doorbell",
+	"keywords": [
+		"iot",
+		"2n",
+		"door"
+	],
+	"contributors": "",
+	"features": [
+		"adapter"
+	],
+	"adminFeatures": [],
+	"type": "household",
+	"startMode": "daemon",
+	"connectionType": "local",
+	"dataSource": "poll",
+	"connectionIndicator": "yes",
+	"adapterSettings": [
+		{
+			"key": "ip",
+			"label": "IP-Adresse",
+			"inputType": "text",
+			"defaultValue": "192.168.1.1"
+		},
+		{
+			"key": "user",
+			"label": "Username",
+			"inputType": "text",
+			"defaultValue": "User"
+		},
+		{
+			"key": "Pw",
+			"label": "Passwort",
+			"inputType": "text",
+			"defaultValue": "123456"
+		}
+	],
+	"language": "TypeScript",
+	"nodeVersion": "16",
+	"adminUi": "react",
+	"releaseScript": "yes",
+	"indentation": "Tab",
+	"quotes": "double",
+	"es6class": "yes",
+	"tools": [
+		"ESLint"
+	],
+	"authorName": "baca89",
+	"authorGithub": "baca89",
+	"authorEmail": "carsten.ba@t-online.de",
+	"gitRemoteProtocol": "SSH",
+	"license": "MIT License",
+	"dependabot": "yes",
+	"target": "github",
+	"creatorVersion": "2.3.0"
+}

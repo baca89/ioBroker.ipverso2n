@@ -1,0 +1,109 @@
+{
+	"common": {
+		"name": "ipverso2n",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "2N IPVerso API Connect",
+		"titleLang": {
+			"en": "2N IPVerso API Connect",
+			"de": "2N IPVerso API Connect",
+			"ru": "2N IPVerso API Connect",
+			"pt": "2N IPVerso API Connect",
+			"nl": "2N IPVerso API Connect",
+			"fr": "2N IPVerso API Connect",
+			"it": "2N IPVerso API Connect",
+			"es": "2N IPVerso API Connect",
+			"pl": "2N IPVerso API Connect",
+			"zh-cn": "2N IPVerso API Connect"
+		},
+		"desc": {
+			"en": "Connection to YouTube 2n doorbell",
+			"de": "Connection to YouTube 2n doorbell",
+			"ru": "Connection to YouTube 2n doorbell",
+			"pt": "Connection to YouTube 2n doorbell",
+			"nl": "Connection to YouTube 2n doorbell",
+			"fr": "Connection to YouTube 2n doorbell",
+			"it": "Connection to YouTube 2n doorbell",
+			"es": "Connection to YouTube 2n doorbell",
+			"pl": "Connection to YouTube 2n doorbell",
+			"zh-cn": "Connection to YouTube 2n doorbell"
+		},
+		"authors": [
+			"baca89 <carsten.ba@t-online.de>"
+		],
+		"keywords": [
+			"iot",
+			"2n",
+			"door"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "ipverso2n.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/baca89/ioBroker.ipverso2n/main/admin/ipverso2n.png",
+		"readme": "https://github.com/baca89/ioBroker.ipverso2n/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "household",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "materialize"
+		},
+		"eraseOnUpload": true,
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.0.0"
+			}
+		]
+	},
+	"native": {
+		"ip": "192.168.1.1",
+		"user": "User",
+		"Pw": "123456"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
